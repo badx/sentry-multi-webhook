@@ -7,16 +7,16 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="sentry-wechat-webhook",
-    version='0.0.6',
-    author='linguofeng',
-    author_email='linguofeng@msn.com',
-    url='https://github.com/linguofeng/sentry-wechat-webhook',
+    name="sentry-multi-webhook",
+    version='0.0.1',
+    author='badx',
+    author_email='badx',
+    url='https://github.com/badx/sentry-multi-webhook',
     description=u'Sentry 企业微信 Webhook 插件',
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
-    keywords='sentry wechat webhook',
+    keywords='sentry multi webhook',
     include_package_data=True,
     zip_safe=False,
     packages=['wechat_webhook'],
@@ -26,7 +26,7 @@ setup(
     ],
     entry_points={
         'sentry.plugins': [
-            'sentry_wechat_webhook = wechat_webhook.plugin:WechatWebhookPlugin'
+            'sentry_multi_webhook = wechat_webhook.plugin:MultiWechatWebhookPlugin'
         ]
     },
     classifiers=[
